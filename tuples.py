@@ -35,3 +35,14 @@ library = [("1984", "George Orwell"), ("Brave New World", "Aldous Huxley")]
 
 # Add functionality to insert new books into library.
 # Ensure that adding a duplicate book is handled appropriately (hint: do a membership check to see if the new book is already in the library).
+
+def flight_itin(itineraries,):
+    for i, (traveler_name, origin, destination) in enumerate(itineraries, start=1):
+        print(f"Itinerary {i}: {traveler_name} - From {origin} to {destination}")
+
+itineraries = [
+    ("Alice", "New York", "London"),
+    ("Bob", "Tokyo", "San Francisco")
+]
+
+flight_itin(itineraries)
